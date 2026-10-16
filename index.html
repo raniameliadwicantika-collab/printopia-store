@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#f6b1cf">
+<title>Printopia Store — Hay Day Food</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="hero">
+  <div class="badge">🌷 PINK FARM MARKET 🌿</div>
+  <div class="hero-main"><div class="mascot">🐮</div><div><p class="eyebrow">WELCOME TO</p><h1>Printopia <span>Store</span></h1><h2>Hay Day Food Market</h2><p>Temukan makanan favorit farm kamu dalam satu katalog manis! 🍓</p></div><div class="basket">🧺</div></div>
+  <div class="hill"></div>
+</header>
+<main class="container">
+  <section class="intro"><span>🍰</span><div><h2>Katalog Food Hay Day</h2><p>Daftar makanan berdasarkan level terbuka di game. Cari nama makanan atau pilih level.</p></div></section>
+  <div class="toolbar"><label class="search">🔎 <input id="search" placeholder="Cari nama makanan..." type="search"></label><label class="filter">Level <select id="level"><option value="all">Semua level</option></select></label></div>
+  <div class="count"><span id="count"></span><button id="reset">Reset filter ↺</button></div>
+  <section id="products" class="grid"></section><p id="empty" hidden class="empty">🥺 Produk tidak ditemukan. Coba kata kunci lain.</p>
+  <aside class="note">🌱 <div><b>Catatan</b><p>Level menunjukkan level saat produk terbuka. Harga belum dicantumkan karena daftar harga belum diberikan.</p></div></aside>
+</main>
+<button class="cart-fab" id="openCart">🛒 <span id="cartCount">0</span></button>
+<div class="backdrop" id="backdrop" hidden><section class="modal"><div class="modalhead"><div><small>PINK FARM MARKET</small><h2>Keranjang Food 🧺</h2></div><button id="closeCart" class="x">×</button></div><div id="cartItems"></div><p id="cartEmpty" class="cartempty">Keranjangmu masih kosong 🍓</p><div class="cartfoot"><p>Total produk <b id="total">0 item</b></p><button id="copy">Salin daftar pesanan</button><small>Daftar pesanan disalin agar bisa dikirim ke penjual.</small></div></section></div>
+<div class="toast" id="toast"></div>
+<footer>🌸 Printopia Store · Hay Day Food 🌿<small>Made with love for your farm</small></footer>
+<script src="script.js"></script>
+</body></html>
